@@ -70,32 +70,9 @@ document.querySelectorAll(".tab-button").forEach(btn => {
   });
 });
 
-// Clear history contextually
+// Clear all history (default version)
 document.getElementById("clear-btn").addEventListener("click", () => {
-  chrome.storage.sync.get("log", (data) => {
-    const log = data.log || [];
-    const currentTab = document.querySelector(".tab.active").dataset.tab;
-    let updatedLog = [];
-    const now = new Date();
-
-    if (currentTab === "day") {
-      updatedLog = log.filter(entry => {
-        const entryDate = new Date(entry.timestamp);
-        return entryDate.toDateString() !== now.toDateString();
-      });
-    } else if (currentTab === "week") {
-      const oneWeekAgo = new Date(now);
-      oneWeekAgo.setDate(now.getDate() - 7);
-      updatedLog = log.filter(entry => {
-        const entryDate = new Date(entry.timestamp);
-        return entryDate < oneWeekAgo;
-      });
-    } else {
-      updatedLog = [];
-    }
-
-    chrome.storage.sync.set({ log: updatedLog }, () => {
-      window.location.reload();
-    });
+  chrome.storage.sync.set({ log: [] }, () => {
+    window.location.reload();
   });
 });
