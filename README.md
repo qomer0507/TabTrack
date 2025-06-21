@@ -5,7 +5,8 @@ TabTrack is a lightweight Chrome extension that helps users understand how they 
 
 ## Preview
 
-![tabtracker](https://github.com/user-attachments/assets/28ae34d3-a13b-4d35-a86a-1cdb5c1bf99e)
+![Screen Recording 2025-06-21 at 3 17 28 AM](https://github.com/user-attachments/assets/2e65499f-b955-4e4d-84ef-f714f6cd04c1)
+
 
 
 
