@@ -1,6 +1,13 @@
+
 # TabTrack – Chrome Extension for Smarter Browsing
 
 TabTrack is a lightweight Chrome extension that helps users understand how they spend time online. It locally and privately tracks time spent on each website and displays usage statistics by day, week, or all time.
+
+## Preview
+![download](https://github.com/user-attachments/assets/104931b5-43fb-4f85-bfac-bdaf7b6895a4)
+
+
+
 
 ## Features
 
