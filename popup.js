@@ -70,7 +70,7 @@ document.querySelectorAll(".tab-button").forEach(btn => {
   });
 });
 
-// Clear all history (default version)
+// Clear history
 document.getElementById("clear-btn").addEventListener("click", () => {
   chrome.storage.sync.set({ log: [] }, () => {
     window.location.reload();
